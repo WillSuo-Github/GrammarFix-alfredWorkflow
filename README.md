@@ -3,7 +3,7 @@
 ![Alfred 5.1.2](https://img.shields.io/badge/Alfred-5.1.2-blue.svg)
 ![macOS 13.5.1](https://img.shields.io/badge/macOS-13.5.1-brightgreen.svg)
 
-The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar in user-selected sentences using OpenAI's language model and then copy the corrected text to the clipboard. It is compatible with Alfred version 5.1.2 and macOS 13.5.1.
+The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar in user-selected sentences using OpenAI's language model and then copy the corrected text to the clipboard, making it suitable for all languages. It is compatible with Alfred version 5.1.2 and macOS 13.5.1.
 
 ## Features
 
