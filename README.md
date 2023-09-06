@@ -28,7 +28,7 @@ The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar
 
 ## License
 
-This workflow is open-source and available under the [MIT License](LICENSE).
+This workflow is open-source and available under the [MIT License](https://rem.mit-license.org).
 
 ## Acknowledgments
 
