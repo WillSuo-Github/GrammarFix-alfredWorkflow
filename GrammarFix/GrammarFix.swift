@@ -22,14 +22,11 @@ struct GrammarFix: AsyncParsableCommand {
     var key: String
     
     mutating func run() async throws {
-        print("start run")
-        
         guard !key.isEmpty else {
             log.critical("key is empty")
             return
         }
-        
-        print("\(text), \(key)")
+
         let text = text
         let key = key
         try await request(text: text, key: key)
