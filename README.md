@@ -7,6 +7,8 @@ The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar
 
 ## Features
 
+<img width="1159" alt="Screenshot 2023-09-06 at 21 20 27" src="https://github.com/WillSuo-Github/GrammarFix-alfredWorkflow/assets/15070906/d933ca60-188b-4561-b119-29f22ec91167">
+
 - Utilizes OpenAI to correct grammar in selected text.
 - Copies the corrected text to your clipboard for easy pasting.
 
@@ -17,9 +19,6 @@ The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar
 2. Double-click the downloaded `.alfredworkflow` file to install it in Alfred.
 
 ## Usage & Configuration
-<img width="1159" alt="Screenshot 2023-09-06 at 21 20 27" src="https://github.com/WillSuo-Github/GrammarFix-alfredWorkflow/assets/15070906/d933ca60-188b-4561-b119-29f22ec91167">
-
-
 
 1. Double-click on the "Hotkey item" to set a shortcut key.
 
