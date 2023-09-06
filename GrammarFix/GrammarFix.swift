@@ -16,10 +16,10 @@ let log = Logger(subsystem: "GrammarFix", category: "main")
 @main
 struct GrammarFix: AsyncParsableCommand {
     @Argument(help: "the text you want to grammar fix")
-    var text: String
+    private var text: String
     
     @Option(name: .long, help: "the openai key")
-    var key: String
+    private var key: String
     
     mutating func run() async throws {
         guard !key.isEmpty else {
@@ -31,7 +31,10 @@ struct GrammarFix: AsyncParsableCommand {
         let key = key
         try await request(text: text, key: key)
     }
-    
+}
+
+// MARK: - Request
+extension GrammarFix {
     private func request(text: String, key: String) async throws {
         let urlSession = URLSession(configuration: .default)
         let configuration = Configuration(apiKey: key)
