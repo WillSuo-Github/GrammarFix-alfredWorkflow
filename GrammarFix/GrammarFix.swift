@@ -37,15 +37,14 @@ struct GrammarFix: AsyncParsableCommand {
         let configuration = Configuration(apiKey: key)
         let openAIClient = OpenAIKit.Client(session: urlSession, configuration: configuration)
         
-        
         let completion = try await openAIClient.completions.create(
             model: Model.GPT3.textDavinci003,
-            prompts: ["The original sentence is \"\(text)\" Maintain the original sentence's meaning, correct the grammar issues in the original sentence, and directly output the corrected result. No need for line breaks and special characters at the end."],
+            prompts: ["The original sentence is \"\(text)\" Maintain the meaning and language of the original sentence, correct the grammar issues in the original sentence, and directly output the corrected result. No need for line breaks and special characters at the end."],
             maxTokens: 1000
         )
         
         if let text = completion.choices.first?.text {
-            dump(text.trimmingCharacters(in: .whitespacesAndNewlines))
+            print(text.trimmingCharacters(in: .whitespacesAndNewlines))
         } else {
             throw GrammarFixError.resultEmpty
         }
