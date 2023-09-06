@@ -9,7 +9,7 @@ The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar
 
 <img width="1159" alt="Screenshot 2023-09-06 at 21 20 27" src="https://github.com/WillSuo-Github/GrammarFix-alfredWorkflow/assets/15070906/d933ca60-188b-4561-b119-29f22ec91167">
 
-- Utilizes OpenAI to correct grammar in selected text.
+- Use OpenAI to correct grammar in selected text, compatible with all languages.
 - Copies the corrected text to your clipboard for easy pasting.
 
 ## Installation
