@@ -14,7 +14,7 @@ The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar
 
 ## Installation
 
-1. Download the latest release of the OpenAI Grammar Correction Alfred Workflow from the [Releases](https://github.com/your-username/your-repo/releases) section of this GitHub repository.
+1. Download the latest release of the OpenAI Grammar Correction Alfred Workflow from the [Releases](https://github.com/WillSuo-Github/GrammarFix-alfredWorkflow/releases) section of this GitHub repository.
 
 2. Double-click the downloaded `.alfredworkflow` file to install it in Alfred.
 
