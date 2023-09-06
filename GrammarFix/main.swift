@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
+//GrammarFix.main(["123123"])
+GrammarFix.main(["123123", "--key", "kkkk"])
+//GrammarFix.main()

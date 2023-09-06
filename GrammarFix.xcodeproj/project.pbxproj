@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF93258A2AA85614006CF07E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9325892AA85614006CF07E /* main.swift */; };
+		AF2C96112AA865B4005CCE33 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF2C96102AA865B4005CCE33 /* OpenAIKit */; };
+		AF2C96152AA86F81005CCE33 /* GrammarFixError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C96142AA86F81005CCE33 /* GrammarFixError.swift */; };
+		AF9325922AA856ED006CF07E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = AF9325912AA856ED006CF07E /* ArgumentParser */; };
+		AF9325942AA8585E006CF07E /* GrammarFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9325932AA8585E006CF07E /* GrammarFix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF2C96142AA86F81005CCE33 /* GrammarFixError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarFixError.swift; sourceTree = "<group>"; };
 		AF9325862AA85614006CF07E /* GrammarFix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GrammarFix; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF9325892AA85614006CF07E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AF9325932AA8585E006CF07E /* GrammarFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarFix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9325922AA856ED006CF07E /* ArgumentParser in Frameworks */,
+				AF2C96112AA865B4005CCE33 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +63,8 @@
 		AF9325882AA85614006CF07E /* GrammarFix */ = {
 			isa = PBXGroup;
 			children = (
-				AF9325892AA85614006CF07E /* main.swift */,
+				AF9325932AA8585E006CF07E /* GrammarFix.swift */,
+				AF2C96142AA86F81005CCE33 /* GrammarFixError.swift */,
 			);
 			path = GrammarFix;
 			sourceTree = "<group>";
@@ -78,6 +85,10 @@
 			dependencies = (
 			);
 			name = GrammarFix;
+			packageProductDependencies = (
+				AF9325912AA856ED006CF07E /* ArgumentParser */,
+				AF2C96102AA865B4005CCE33 /* OpenAIKit */,
+			);
 			productName = GrammarFix;
 			productReference = AF9325862AA85614006CF07E /* GrammarFix */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +117,10 @@
 				Base,
 			);
 			mainGroup = AF93257D2AA85614006CF07E;
+			packageReferences = (
+				AF9325902AA856ED006CF07E /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				AF2C960F2AA865B4005CCE33 /* XCRemoteSwiftPackageReference "openai-kit" */,
+			);
 			productRefGroup = AF9325872AA85614006CF07E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF93258A2AA85614006CF07E /* main.swift in Sources */,
+				AF2C96152AA86F81005CCE33 /* GrammarFixError.swift in Sources */,
+				AF9325942AA8585E006CF07E /* GrammarFix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +200,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -237,6 +254,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -280,6 +298,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF2C960F2AA865B4005CCE33 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanshine/openai-kit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+		AF9325902AA856ED006CF07E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF2C96102AA865B4005CCE33 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2C960F2AA865B4005CCE33 /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
+		AF9325912AA856ED006CF07E /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF9325902AA856ED006CF07E /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF93257E2AA85614006CF07E /* Project object */;
 }
