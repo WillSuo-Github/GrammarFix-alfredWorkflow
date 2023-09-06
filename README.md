@@ -36,4 +36,4 @@ This workflow is open-source and available under the [MIT License](LICENSE).
 
 ## Support and Issues
 
-If you encounter any issues or have questions, please [open an issue](https://github.com/your-username/your-repo/issues) on this GitHub repository, and we'll be happy to assist you.
+If you encounter any issues or have questions, please [open an issue](https://github.com/WillSuo-Github/GrammarFix-alfredWorkflow/issues) on this GitHub repository, and we'll be happy to assist you.
