@@ -42,7 +42,7 @@ extension GrammarFix {
         
         let completion = try await openAIClient.completions.create(
             model: Model.GPT3.textDavinci003,
-            prompts: ["The original sentence is \"\(text)\" Maintain the meaning and language of the original sentence, correct the grammar issues in the original sentence, and directly output the corrected result. No need for line breaks and special characters at the end."],
+            prompts: ["The original sentence is: \"\(text)\" Please maintain the meaning and language of the original sentence, correct the grammar issues in the original sentence, and directly output the corrected result without the prefix like \"The correct sentence is\" and without line breaks, special characters, or quotation marks at the beginning and end of the sentence."],
             maxTokens: 1000
         )
         
