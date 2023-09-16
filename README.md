@@ -30,7 +30,7 @@ The OpenAI Grammar Correction Alfred Workflow is designed to correct the grammar
 
 1. This workflow is powered by the [OpenAI API](https://openai.com).
    
-2. It relies on the [OpenAIKit](https://github.com/MarcoDotIO/OpenAIKit) library for integration.
+2. It relies on the [OpenAI](https://github.com/MacPaw/OpenAI) library for integration.
 
 ## License
 
