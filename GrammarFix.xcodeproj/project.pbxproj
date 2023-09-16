@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF2C96112AA865B4005CCE33 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF2C96102AA865B4005CCE33 /* OpenAIKit */; };
+		34D5BF0D2AB583F400E2988D /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 34D5BF0C2AB583F400E2988D /* OpenAI */; };
 		AF2C96152AA86F81005CCE33 /* GrammarFixError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C96142AA86F81005CCE33 /* GrammarFixError.swift */; };
 		AF9325922AA856ED006CF07E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = AF9325912AA856ED006CF07E /* ArgumentParser */; };
 		AF9325942AA8585E006CF07E /* GrammarFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9325932AA8585E006CF07E /* GrammarFix.swift */; };
@@ -36,8 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D5BF0D2AB583F400E2988D /* OpenAI in Frameworks */,
 				AF9325922AA856ED006CF07E /* ArgumentParser in Frameworks */,
-				AF2C96112AA865B4005CCE33 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			name = GrammarFix;
 			packageProductDependencies = (
 				AF9325912AA856ED006CF07E /* ArgumentParser */,
-				AF2C96102AA865B4005CCE33 /* OpenAIKit */,
+				34D5BF0C2AB583F400E2988D /* OpenAI */,
 			);
 			productName = GrammarFix;
 			productReference = AF9325862AA85614006CF07E /* GrammarFix */;
@@ -119,7 +119,7 @@
 			mainGroup = AF93257D2AA85614006CF07E;
 			packageReferences = (
 				AF9325902AA856ED006CF07E /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
-				AF2C960F2AA865B4005CCE33 /* XCRemoteSwiftPackageReference "openai-kit" */,
+				34D5BF0B2AB583F400E2988D /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
 			productRefGroup = AF9325872AA85614006CF07E /* Products */;
 			projectDirPath = "";
@@ -300,12 +300,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AF2C960F2AA865B4005CCE33 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+		34D5BF0B2AB583F400E2988D /* XCRemoteSwiftPackageReference "OpenAI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dylanshine/openai-kit";
+			repositoryURL = "https://github.com/MacPaw/OpenAI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.2;
+				minimumVersion = 0.2.4;
 			};
 		};
 		AF9325902AA856ED006CF07E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
@@ -319,10 +319,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AF2C96102AA865B4005CCE33 /* OpenAIKit */ = {
+		34D5BF0C2AB583F400E2988D /* OpenAI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AF2C960F2AA865B4005CCE33 /* XCRemoteSwiftPackageReference "openai-kit" */;
-			productName = OpenAIKit;
+			package = 34D5BF0B2AB583F400E2988D /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
 		};
 		AF9325912AA856ED006CF07E /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
