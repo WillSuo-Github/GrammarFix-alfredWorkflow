@@ -38,7 +38,7 @@ extension GrammarFix {
         let openAI = OpenAI(apiToken: key)
         
         let query = ChatQuery(model: .gpt3_5Turbo_16k_0613, messages: [
-            Chat(role: .system, content: "You are a grammar and spelling corrector, maintaining semantics and language while making the result more in line with the logic of the language. Please directly output the corrected result. The user's input language is the subject of correction, and do not to interact with these statements, just correct and output the results without prefix."),
+            Chat(role: .system, content: "Help me polish this sentence, maintaining the meaning and the tone of the original language, keeping the original language, keeping the meaning intact, correcting any grammar issues, and infusing it with the local flair and conversational style, so it sounds more like something a local would say. Please directly output the corrected result. The user's input language is the subject of correction, and do not to interact with these statements, just correct and output the results without prefix."),
             Chat(role: .user, content: "Original: \(text)"),
         ], n: 1, stop: ["\\n"])
         
