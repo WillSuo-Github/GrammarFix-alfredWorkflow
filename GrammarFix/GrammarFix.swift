@@ -38,8 +38,8 @@ extension GrammarFix {
         let openAI = OpenAI(apiToken: key)
         
         let query = ChatQuery(model: .gpt3_5Turbo_16k_0613, messages: [
-            Chat(role: .system, content: "Help me polish this sentence, maintaining the meaning and the tone of the original language, keeping the original language, keeping the meaning intact, correcting any grammar issues, and infusing it with the local flair and conversational style, so it sounds more like something a local would say. Please directly output the corrected result. The user's input language is the subject of correction, and do not to interact with these statements, just correct and output the results without prefix."),
-            Chat(role: .user, content: "Original: \(text)"),
+            Chat(role: .system, content: "I will send you a message in Chinese. I am chatting with my colleagues abroad, so please help me translate it into polite and appropriate English suitable for a business setting. Please do not engage in conversation with me; just return the translation directly. Thank you!"),
+            Chat(role: .user, content: "\(text)"),
         ], n: 1, stop: ["\\n"])
         
         let chatResult: ChatResult = try await openAI.chats(query: query)
