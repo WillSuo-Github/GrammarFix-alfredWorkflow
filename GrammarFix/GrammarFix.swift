@@ -36,15 +36,14 @@ struct GrammarFix: AsyncParsableCommand {
 extension GrammarFix {
     private func request(text: String, key: String) async throws {
         let openAI = OpenAI(apiToken: key)
-        
-        let query = ChatQuery(model: .gpt3_5Turbo_16k_0613, messages: [
-            Chat(role: .system, content: "I will send you a message in Chinese. I am chatting with my colleagues abroad, so please help me translate it into polite and appropriate English suitable for a business setting. Please do not engage in conversation with me; just return the translation directly. Thank you!"),
-            Chat(role: .user, content: "\(text)"),
-        ], n: 1, stop: ["\\n"])
+        let query = ChatQuery(messages: [
+            .init(role: .system, content: "I will send you a message in Chinese. I am chatting with my colleagues abroad, so please help me translate it into polite and appropriate English suitable for a business setting. Please do not engage in conversation with me; just return the translation directly. Thank you!")!,
+            .init(role: .user, content: "\(text)")!
+        ], model: .gpt3_5Turbo, n: 1)
         
         let chatResult: ChatResult = try await openAI.chats(query: query)
         
-        guard let result = chatResult.choices.first?.message.content else {
+        guard let result = chatResult.choices.first?.message.content?.string else {
             throw GrammarFixError.resultEmpty
         }
         

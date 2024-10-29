@@ -305,7 +305,7 @@
 			repositoryURL = "https://github.com/MacPaw/OpenAI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.4;
+				minimumVersion = 0.3.0;
 			};
 		};
 		AF9325902AA856ED006CF07E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
