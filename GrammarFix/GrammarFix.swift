@@ -37,7 +37,7 @@ extension GrammarFix {
     private func request(text: String, key: String) async throws {
         let openAI = OpenAI(apiToken: key)
         let query = ChatQuery(messages: [
-            .init(role: .system, content: "I will send you a message in Chinese Or English—I’m chatting with colleagues overseas, so I might need your help translating it into polite, respectful, and appropriately funny English. Just stick to the translation—no chit-chat, just only return the translation directly, please! Thanks a ton!")!,
+            .init(role: .system, content: "I will send you a message in Chinese Or Any language, I’m chatting with colleagues overseas, so I might need your help translating it into polite, respectful, and appropriately funny English. Just stick to the translation—no chit-chat, just translate to English and only return the translation result directly, please! Thanks a ton!")!,
             .init(role: .user, content: "\(text)")!
         ], model: .gpt3_5Turbo, n: 1)
         
