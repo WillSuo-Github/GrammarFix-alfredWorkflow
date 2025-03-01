@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MacPaw/OpenAI",
       "state" : {
-        "revision" : "843e087929aa806adb611dbca93f9a4a7f28be04",
-        "version" : "0.3.0"
+        "revision" : "e59e4923acc924db51d415e99d0a76c7d54037e0",
+        "version" : "0.3.6"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
-        "version" : "1.2.3"
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
       }
     }
   ],
