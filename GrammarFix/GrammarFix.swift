@@ -48,6 +48,6 @@ extension GrammarFix {
             throw GrammarFixError.resultEmpty
         }
         
-        print(result)
+        print(result.string ?? "Failed")
     }
 }
