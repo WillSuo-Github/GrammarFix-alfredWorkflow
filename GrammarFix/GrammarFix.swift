@@ -37,7 +37,7 @@ extension GrammarFix {
     private func request(text: String, key: String) async throws {
         let openAI = OpenAI(apiToken: key)
         let query = ChatQuery(messages: [
-            .system(.init(content: "The user will send you a piece of text. Please reorganize the logic and structure of this text and then translate it into both Chinese and English. If the user provides Chinese text, translate it into English; if the user provides English text, translate it into Chinese. Do not attempt to converse with the user. Your response should only contain the translated result without any additional content and should not include ``` at the beginning or end.")),
+            .system(.init(content: "The user will send you a piece of text. Please reorganize the logic and structure of this text and then translate it into Chinese or English. If the user provides Chinese text, translate it into English; if the user provides English text, translate it into Chinese. Do not attempt to converse with the user. Your response should only contain the translated result without any additional content and od not contain user original text and should not include ``` at the beginning or end.")),
             .user(.init(content: .string(text)))
         ], model: .gpt3_5Turbo, n: 1)
         
